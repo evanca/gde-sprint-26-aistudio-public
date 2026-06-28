@@ -1,0 +1,8 @@
+{
+  "name": "prompt-to-popup-shop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test && node verify.mjs"
+  }
+}

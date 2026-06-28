@@ -1,0 +1,6 @@
+{
+  "name": "Sora Stationery",
+  "description": "A dreamy, whimsical stationery pop-up shop featuring cozy notebooks, washi tapes, fountain pens, and stickers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

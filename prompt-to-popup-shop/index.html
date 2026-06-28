@@ -1,0 +1,315 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <!-- seo:stamped -->
+  <meta name="description" content="Prototype a shop in AI Studio Build, bring it into Antigravity 2.0 with one-click Export to Antigravity, then have the in-app agent harden the raw export…">
+  <meta name="keywords" content="ai-studio, antigravity, prototype-to-production, one-click-export, export-to-antigravity, static-site, hardening, tutorial, getting-started">
+  <meta name="author" content="evanca">
+  <link rel="canonical" href="https://happycode.studio/gde-sprint-26-aistudio-public/prompt-to-popup-shop/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="From AI Studio Prototype to Production with One-Click Export">
+  <meta property="og:description" content="Prototype a shop in AI Studio Build, bring it into Antigravity 2.0 with one-click Export to Antigravity, then have the in-app agent harden the raw export…">
+  <meta property="og:url" content="https://happycode.studio/gde-sprint-26-aistudio-public/prompt-to-popup-shop/">
+  <meta property="og:site_name" content="2026 Agentic Architect Sprint by Google">
+  <meta property="og:image" content="https://happycode.studio/gde-sprint-26-aistudio-public/prompt-to-popup-shop/img/5fdd438860f92bbb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="From AI Studio Prototype to Production with One-Click Export">
+  <meta name="twitter:description" content="Prototype a shop in AI Studio Build, bring it into Antigravity 2.0 with one-click Export to Antigravity, then have the in-app agent harden the raw export…">
+  <meta name="twitter:image" content="https://happycode.studio/gde-sprint-26-aistudio-public/prompt-to-popup-shop/img/5fdd438860f92bbb.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "From AI Studio Prototype to Production with One-Click Export",
+      "description": "Prototype a shop in AI Studio Build, bring it into Antigravity 2.0 with one-click Export to Antigravity, then have the in-app agent harden the raw export…",
+      "url": "https://happycode.studio/gde-sprint-26-aistudio-public/prompt-to-popup-shop/",
+      "inLanguage": "en",
+      "keywords": "ai-studio, antigravity, prototype-to-production, one-click-export, export-to-antigravity, static-site, hardening, tutorial, getting-started",
+      "author": {
+        "@type": "Person",
+        "name": "evanca"
+      },
+      "isPartOf": {
+        "@type": "Course",
+        "name": "2026 Agentic Architect Sprint by Google",
+        "url": "https://happycode.studio"
+      },
+      "image": "https://happycode.studio/gde-sprint-26-aistudio-public/prompt-to-popup-shop/img/5fdd438860f92bbb.png"
+    },
+    {
+      "@type": "HowTo",
+      "name": "From AI Studio Prototype to Production with One-Click Export",
+      "description": "Prototype a shop in AI Studio Build, bring it into Antigravity 2.0 with one-click Export to Antigravity, then have the in-app agent harden the raw export…",
+      "totalTime": "PT40M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Prepare"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Prototype in AI Studio Build"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Export to Antigravity"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Add the Production-Readiness Contract"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "See the Gap"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Harden It to Production"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Verify the Oracle"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 8,
+          "name": "Deploy"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 9,
+          "name": "Congratulations"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "2026 Agentic Architect Sprint by Google",
+          "item": "https://happycode.studio"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "From AI Studio Prototype to Production with One-Click Export",
+          "item": "https://happycode.studio/gde-sprint-26-aistudio-public/prompt-to-popup-shop/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+  <style id="cl-prompt-plain">
+    /* Render ```text blocks (prompts, trees) as plain monospace, not syntax-colored. */
+    pre code[class*="language-text"] span { color: inherit !important; background: transparent !important; font-weight: inherit !important; font-style: inherit !important; }
+    /* Wrap long paste prompts so the full text is visible and easy to select/copy. */
+    pre code[class*="language-text"] { white-space: pre-wrap; overflow-wrap: anywhere; }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVZ48SGNV9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QVZ48SGNV9');
+  </script>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>From AI Studio Prototype to Production with One-Click Export</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="prompt-to-popup-shop"
+                  title="From AI Studio Prototype to Production with One-Click Export"
+                  environment="web"
+                  feedback-link="https://github.com/evanca/gde-sprint-26-aistudio-public/issues">
+    
+      <google-codelab-step label="Introduction" duration="3">
+        <p>This is the final codelab of the <strong>2026 Agentic Architect Sprint by Google</strong>. You prototype fast in <strong>AI Studio Build</strong>, bring the result into a local <strong>Antigravity 2.0</strong> workspace with <strong>one-click Export to Antigravity</strong>, then have the <strong>in-app agent harden</strong> the raw export into a clean, maintainable, deployable static app.</p>
+<p>You start fast in <strong>AI Studio Build</strong> — iterate from anywhere, even your phone — then continue the <em>same</em> project on your computer in <strong>Antigravity 2.0</strong>. The lesson is that <strong>prototype-to-production handoff</strong>: Export to Antigravity carries your code <em>and your agent conversation</em> across in one click, and you give the in-app agent an objective <strong>contract</strong> so it can turn the export into a maintainable, deployable static app.</p>
+<p class="image-container"><img alt="What you will build: a hardened, static Sora Stationery shop — a product grid with live stock states, a hash router, and an About page — refactored by the agent from a raw AI Studio export" src="img/5fdd438860f92bbb.png"></p>
+<h2 is-upgraded>What You Will Build</h2>
+<ul>
+<li>An <strong>AI Studio Build</strong> prototype of a small pop-up shop, from one prompt.</li>
+<li>A local <strong>Antigravity 2.0</strong> workspace carrying that prototype — code <em>and</em> the full agent conversation — via <strong>Export to Antigravity</strong>.</li>
+<li>A <strong>hardened static production app</strong> the in-app agent refactors to meet a contract: data separated from markup, a tiny router, pure tested helpers, <code>README.md</code>, <code>DEPLOY.md</code>, and no shipped secrets.</li>
+</ul>
+<h2 is-upgraded>What You Will Learn</h2>
+<ul>
+<li>How to build an app from a prompt in AI Studio Build.</li>
+<li>How <strong>Export to Antigravity</strong> brings the prototype — and your conversation context — into a local Antigravity 2.0 workspace in one click.</li>
+<li>Why a raw export is not production-ready, and how to drive the in-app agent to harden it (plan → build → verify).</li>
+<li>How a <strong>production-readiness contract</strong> (<code>tests/</code> + <code>verify.mjs</code>) makes &#34;done&#34; objective and serves as the agent&#39;s oracle.</li>
+</ul>
+<h2 is-upgraded>Cost and Scope</h2>
+<p>The prototype uses your AI Studio account (a managed <code>GEMINI_API_KEY</code>). The hardened app is fully static — no key, no backend — and its contract is plain Node.js, verified offline with <code>node --test</code> (Node.js 20+). You build <em>your own</em> shop, so the kit ships the portable <strong>contract</strong>, not a throwaway app; a worked example is included for comparison.</p>
+<p>Target duration: <strong>35–45 minutes</strong>.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Prepare" duration="4">
+        <p><strong>AI Studio.</strong> Go to <code>aistudio.google.com</code> and sign in with your Google Account. Follow the current onboarding; AI Studio provisions a managed <code>GEMINI_API_KEY</code> for you.</p>
+<p><strong>Antigravity 2.0.</strong> Download and install the desktop app from <code>antigravity.google/download</code>, open it, and sign in through the onboarding flow. This is where the export lands and where the agent does the hardening.</p>
+<p><strong>Node.js</strong> runs the contract (the agent runs it too, during hardening):</p>
+<pre><code language="language-bash" class="language-bash">node --version    # Node.js 20+
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Prototype in AI Studio Build" duration="5">
+        <p>Open <strong>Build</strong> at <code>aistudio.google.com/apps</code>. In the prompt box, describe a small shop. You are building <em>your own</em> variant — theme it however you like — but keep the shape the contract expects: <strong>a product grid with an About page, and at least one sold-out item</strong>. This prompt produces exactly that:</p>
+<pre><code language="language-text" class="language-text">Build a dreamy stationery pop-up shop landing page — washi tape, notebooks, a fountain pen, stickers — with a small product grid and an about page.
+</code></pre>
+<p class="image-container"><img alt="Entering the one-sentence prompt in AI Studio Build" src="img/f77666943f4d4bf9.png"></p>
+<p>Run it. AI Studio generates the app and shows a <strong>live preview</strong> — here, a &#34;Sora Stationery&#34; shop with a product grid and an About page.</p>
+<p class="image-container"><img alt="The generated shop in AI Studio Build&amp;rsquo;s live preview" src="img/42af2575425c9f43.png"></p>
+<aside class="special"><p> The power here is the <strong>handoff</strong>: you can iterate on this prototype fast from anywhere — even your phone — and the <strong>Code</strong> tab shows it&#39;s a real <strong>React / TypeScript / Vite</strong> project. In the next step you bring that same project, and your conversation, into Antigravity 2.0 on your computer to keep building — refactor it, test it, and ship it as a static app. </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Export to Antigravity" duration="4">
+        <p>Open the <strong>Code</strong> tab to inspect the generated files (<code>App.tsx</code>, <code>main.tsx</code>, <code>vite.config.ts</code>, <code>tsconfig.json</code>, <code>.env.example</code>...), then open the <strong>Export</strong> menu and choose <strong>Export to Antigravity</strong>.</p>
+<p class="image-container"><img alt="The Code tab — a React/Vite project — with the Export menu open on &amp;ldquo;Export to Antigravity&amp;rdquo;" src="img/1e10229852893265.png"></p>
+<p>The export dialog spells out what crosses over: <strong>all project files</strong>, your <strong>conversation history</strong>, and any <strong>secrets</strong> — here <code>GEMINI_API_KEY</code>. One click brings the whole prototype, and the context of how you built it, into a local Antigravity 2.0 workspace.</p>
+<p class="image-container"><img alt="The &amp;ldquo;Export to Antigravity&amp;rdquo; dialog: all files, conversation history, and one secret (GEMINI_API_KEY) carry over" src="img/3ea39436786da0fb.png"></p>
+<aside class="special"><p> Because your <strong>conversation history</strong> comes along, the in-app agent already knows what the prototype was trying to be — you hand it the contract, not the backstory. </p>
+</aside>
+<aside class="warning"><p> If <strong>Open in Antigravity</strong> launches the app but your project isn&#39;t there, use <strong>Download as .zip file</strong> in the same Export menu, unzip it, and in Antigravity 2.0 choose <strong>Open Folder</strong> on the unzipped project. Either way you end up with the export open as your workspace. </p>
+</aside>
+<aside class="special"><p> The export brings the <code>GEMINI_API_KEY</code> across so the prototype keeps running. You will harden to a <strong>static</strong> app that needs no key, and the agent removes it — so nothing secret ships. Never commit a real key. </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Add the Production-Readiness Contract" duration="4">
+        <p>&#34;Hardened&#34; needs a definition the agent can check. This codelab&#39;s kit is that definition — a portable <strong>contract</strong> you drop into your exported project. Pull down just the <code>workspace/</code> folder with a sparse checkout:</p>
+<pre><code language="language-bash" class="language-bash">git clone --no-checkout --depth 1 https://github.com/evanca/gde-sprint-26-aistudio-public.git
+cd gde-sprint-26-aistudio-public
+git sparse-checkout init --cone
+git sparse-checkout set workspace
+git checkout
+</code></pre>
+<p>Copy the contract files — <code>tests/</code> and <code>verify.mjs</code> — into the <strong>root of your exported project</strong> (the folder you opened in Antigravity 2.0). The contract is not an app; it asserts the production <em>shape</em>, so it holds for whatever shop you built:</p>
+<ul>
+<li>product data lives in <code>data/products.json</code> and is loaded with <code>fetch("data/products.json")</code> — nothing inlined in <code>index.html</code>;</li>
+<li>pure helpers <code>resolveRoute</code>, <code>formatPrice</code>, <code>inStock</code>, <code>summarize</code> (and a <code>ROUTES</code> list) in <code>js/shop.js</code>;</li>
+<li>a hash router — <code>#/shop</code>, <code>#/about</code>, and a friendly not-found view;</li>
+<li>accessible and responsive — <code><html lang></code>, a viewport meta, <code>aria-label</code>s, <code>@media</code>;</li>
+<li>docs — a <code>README.md</code> recording the AI Studio origin, and a <code>DEPLOY.md</code>.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="See the Gap" duration="3">
+        <p>In Antigravity 2.0, ask the agent to run the contract against the fresh export:</p>
+<pre><code language="language-text" class="language-text">Run `node --test` and `node verify.mjs` in this project and summarize what fails.
+</code></pre>
+<p>The raw export <strong>fails</strong>: the helpers the tests import from <code>js/shop.js</code> don&#39;t exist (the logic is inside React components), and <code>verify.mjs</code> reports inlined data, the wrong structure, and missing docs. The prototype renders in a preview, but it is not a maintainable, deployable app.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Harden It to Production" duration="9">
+        <p>Now hand the work to the agent. The contract is its <strong>oracle</strong> — &#34;done&#34; means <code>node --test</code> and <code>node verify.mjs</code> both pass. Paste the goal into the agent chat:</p>
+<pre><code language="language-text" class="language-text">This is a raw AI Studio export prototype. Harden it into a maintainable, production-ready static app, without changing what the shop looks like: move the product data out of index.html (it&#39;s inlined as window.__PRODUCTS__) into data/products.json and fetch it in js/app.js; implement the pure helpers in js/shop.js — resolveRoute, formatPrice, inStock, summarize — and add a tiny hash router with #/shop, #/about, and a friendly not-found view; keep it fully static and accessible (html lang, viewport, aria-labels). Add a README.md that records the AI Studio origin and the build prompt, and a DEPLOY.md with static-hosting notes; make sure no secrets (the GEMINI_API_KEY) ship. It is done only when both `node --test` and `node verify.mjs` pass — read tests/shop.test.js and verify.mjs for the exact contract and don&#39;t weaken them.
+</code></pre>
+<p class="image-container"><img alt="Pasting the hardening goal into the exported project in Antigravity 2.0" src="img/2501425d1efad2c0.png"></p>
+<p>The agent first writes an <strong>Implementation Plan</strong> — for a change this broad it pauses for you to review and click <strong>Proceed</strong> before it edits anything. The plan here is a stack swap: retire React/Vite/TypeScript and rebuild as a static SPA that satisfies the contract.</p>
+<p class="image-container"><img alt="The Implementation Plan: refactor the React/TypeScript export into a static SPA" src="img/5ad26051f99619ed.png"></p>
+<p>Approve it and the agent works the loop — separating the data, implementing the helpers, adding the router, writing the docs, and running the contract until it is green. When it finishes, Antigravity&#39;s <strong>Walkthrough</strong> artifact summarizes what changed and how it was verified.</p>
+<p class="image-container"><img alt="The Walkthrough artifact summarizing the hardening run" src="img/6c5a97f5f7dc8d80.png"></p>
+<aside class="special"><p> The contract bounds the work: the agent keeps going only until <code>node --test</code> and <code>node verify.mjs</code> pass. A clear, machine-checkable &#34;done&#34; is what makes handing off a broad refactor safe. </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Verify the Oracle" duration="3">
+        <p>The contract is the same whether a human or the agent built the app. Run it yourself:</p>
+<pre><code language="language-bash" class="language-bash">node --test            # helpers: routing, price, inventory
+node verify.mjs        # structure, accessibility, data, docs
+</code></pre>
+<p class="image-container"><img alt="The green oracle: node &amp;ndash;test 6/6 and verify.mjs passing" src="img/99c903a3ca8f11ad.gif"></p>
+<p>Serve the folder and you have the hardened shop — a product grid with live stock states, a working About route, and no build step:</p>
+<pre><code language="language-bash" class="language-bash">python3 -m http.server 8000   # open http://localhost:8000/
+</code></pre>
+<aside class="special"><p> Want to QA the running app in a real browser — clicks, console, accessibility — instead of just the static contract? That&#39;s the <a href="https://happycode.studio/gde-sprint-26-browser-public/" target="_blank">QA Your App in a Real Browser with the /browser Agent</a> codelab; point its <code>/browser</code> agent at <code>http://localhost:8000/</code>. </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Deploy" duration="3">
+        <p>The hardened app is fully static, so it deploys anywhere (see <code>DEPLOY.md</code>):</p>
+<ul>
+<li><strong>GitHub Pages:</strong> push the folder and enable Pages on the branch root.</li>
+<li><strong>Vercel / Netlify:</strong> import the repo; no build command, publish the root.</li>
+<li><strong>Static bucket + CDN / Cloud Run:</strong> serve the folder as-is; <code>index.html</code> is the entry, and hash routing needs no server rewrites.</li>
+</ul>
+<p>No secrets are required — hardening to static removed the AI runtime, and <code>.gitignore</code> keeps <code>.env*</code> out of the repo.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Congratulations" duration="2">
+        <p>You completed the prototype-to-production lifecycle: built an app from a prompt in AI Studio Build, used <strong>one-click Export to Antigravity</strong> to bring it — code and agent conversation — into a local Antigravity 2.0 workspace, then had the in-app agent harden the raw export into a clean, tested, documented, deployable static app against a contract that makes &#34;production-ready&#34; objective.</p>
+<p>You learned:</p>
+<ul>
+<li>How to build an app from a prompt in AI Studio Build.</li>
+<li>How <strong>Export to Antigravity</strong> carries code and conversation context into Antigravity 2.0 in one click (with a <code>.zip</code> + <strong>Open Folder</strong> fallback).</li>
+<li>How to drive the in-app agent to harden a prototype: separated data, a router, tested logic, docs, and no shipped secrets.</li>
+<li>How a production-readiness contract (<code>tests/</code> + <code>verify.mjs</code>) is the agent&#39;s oracle and pins &#34;done.&#34;</li>
+</ul>
+<p><strong>Portability:</strong> the pattern is <em>prototype → export → harden against a contract</em>. The prototype can come from anywhere; the contract — not the prototype&#39;s source — is what makes &#34;done&#34; objective.</p>
+<p>That completes the <strong>2026 Agentic Architect Sprint</strong> — twelve codelabs from dynamic subagents through governance, cost, automation, autonomy, skills, browser verification, and the prototype-to-production handoff.</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

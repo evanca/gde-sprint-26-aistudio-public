@@ -1,0 +1,37 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2026-06-28T16:50:30+03:00",
+  "id": "prompt-to-popup-shop",
+  "duration": 40,
+  "title": "From AI Studio Prototype to Production with One-Click Export",
+  "authors": "evanca",
+  "summary": "Prototype a shop in AI Studio Build, bring it into Antigravity 2.0 with one-click Export to Antigravity, then have the in-app agent harden the raw export into a clean, tested, deployable static app against a production-readiness contract you supply.",
+  "source": "/Users/ivanna/StudioProjects/2026 The Agentic Architect Sprint by Google/codelab-12-prompt-to-popup-shop/codelab.md",
+  "theme": "",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "gemini",
+    "aistudio",
+    "antigravity",
+    "web"
+  ],
+  "tags": [
+    "ai-studio",
+    "antigravity",
+    "export-to-antigravity",
+    "getting-started",
+    "hardening",
+    "one-click-export",
+    "prototype-to-production",
+    "static-site",
+    "tutorial",
+    "web"
+  ],
+  "feedback": "https://github.com/evanca/gde-sprint-26-aistudio-public/issues",
+  "url": "prompt-to-popup-shop"
+}

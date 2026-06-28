@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sora Stationery — The Kyoto Virtual Archive</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" role="status">
+      ✨ Under the crescent moon: shop our limited virtual pop-up archive with worldwide shipping. Wrapped in celestial tissue. ✨
+    </div>
+
+    <!-- Header Navigation -->
+    <header role="banner">
+      <a href="#/shop" class="brand" aria-label="Sora Stationery Home">
+        <span class="brand-name">Sora Stationery</span>
+        <span class="brand-tagline">Kyoto Garden Glasshouse Archive</span>
+      </a>
+
+      <nav role="navigation" aria-label="Main Navigation">
+        <a href="#/shop" class="nav-link" id="nav-shop" aria-label="View stationery products catalog">Catalog</a>
+        <a href="#/about" class="nav-link" id="nav-about" aria-label="Read about Sora Stationery story">Our Story</a>
+        <button class="cart-toggle" id="cart-btn" aria-label="Open your Kyoto parcel cart" aria-haspopup="dialog">
+          <span>📦 Bag</span>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main Container supporting Single Page Navigation Views -->
+    <main role="main">
+      <!-- 1. Catalog View -->
+      <section id="shop" class="view-section" aria-labelledby="shop-view-title">
+        <div class="shop-header">
+          <h1 id="shop-view-title">The Virtual Archive</h1>
+          <div class="summary-badge" id="store-stats" aria-label="Store inventory status summary">
+            <!-- Rendered dynamically by js/app.js -->
+            <span class="summary-item"><span class="summary-dot dot-total"></span>Loading archive...</span>
+          </div>
+        </div>
+
+        <div class="products-grid" id="products-list-container" role="region" aria-label="Stationery products catalog grid">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+      </section>
+
+      <!-- 2. About View -->
+      <section id="about" class="view-section" aria-labelledby="about-view-title">
+        <div class="about-container">
+          <div class="about-banner" role="img" aria-label="Handcrafted leaf wax seal icon">🌿</div>
+          <h1 id="about-view-title" class="about-title">Sora Stationery (空 / Sky)</h1>
+          <p class="about-paragraph">
+            Sora Stationery was born from a simple desire: to capture the quiet, fleeting beauty of a drifting cloud, a starry midnight, or a warm cup of barley tea, and press it into tactile paper and ink.
+          </p>
+          <p class="about-paragraph">
+            Our temporary Kyoto glasshouse pop-up gathers masterfully crafted instruments and fine papers from indie ateliers. We believe that putting physical pen to paper is a slow, meditative act of self-care—a sanctuary where thoughts can stretch and daydreams can settle.
+          </p>
+          <p class="about-paragraph">
+            For those who cannot visit our garden glasshouse in person, this virtual archive allows you to take home a piece of the sky. Each order is meticulously wrapped by hand with a pressed botanical leaf, wrapped in starry vellum paper, and hand-stamped with a vintage brass wax seal.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3. Friendly 404 View -->
+      <section id="not-found" class="view-section" aria-labelledby="not-found-title">
+        <div class="not-found-container">
+          <div class="not-found-emoji">☁️</div>
+          <h1 id="not-found-title" class="not-found-title">Lost in the Clouds</h1>
+          <p class="not-found-text">
+            Oh dear! This path seems to have faded like wet ink. Let us guide you back to the sanctuary.
+          </p>
+          <a href="#/shop" class="btn-primary" aria-label="Return to stationery catalog">Return to Sanctuary</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Product Details Modal Dialog -->
+    <dialog id="product-detail-modal" class="product-modal" aria-labelledby="modal-title">
+      <button class="modal-close-btn" id="close-modal-btn" aria-label="Close product details modal">&times;</button>
+      <div class="modal-content" id="modal-content-container">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </dialog>
+
+    <!-- Shopping Cart Backdrop & Drawer Panel -->
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Kyoto parcel shopping cart" aria-hidden="true">
+      <div class="cart-drawer-header">
+        <h2 class="cart-drawer-title">Your Kyoto Parcel</h2>
+        <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart drawer">&times;</button>
+      </div>
+
+      <div class="cart-items-container" id="cart-items-list" role="region" aria-label="Cart items list">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="wrapping-option">
+          <input type="checkbox" id="gift-wrapping" aria-label="Add Kyoto garden gift wrapping for $3.00" />
+          <label for="gift-wrapping">
+            <strong>Kyoto botanical leaf wrapping (+ $3.00)</strong><br />
+            Hand-wrapped in starry vellum paper and finished with a fragrant brass wax seal.
+          </label>
+        </div>
+
+        <div class="cart-total-row">
+          <span>Subtotal</span>
+          <span id="cart-total-price">$0.00</span>
+        </div>
+
+        <button class="checkout-btn" id="checkout-btn" aria-label="Place your order with Sora Stationery">
+          <span>Complete Kyoto Order</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Toast Toast Notification Message -->
+    <div class="toast-msg" id="toast-message" role="alert" aria-live="polite"></div>
+
+    <!-- Footer Content -->
+    <footer>
+      <div class="footer-decor">🌙</div>
+      <p>&copy; 2026 Sora Stationery (空). Handcrafted Kyoto archives. All rights reserved.</p>
+    </footer>
+
+    <!-- App Logic Injection -->
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
